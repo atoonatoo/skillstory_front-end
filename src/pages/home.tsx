@@ -6,7 +6,6 @@ const home = () => {
     const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
 
     useEffect(() => {
-
         const storeUserInfo = localStorage.getItem('userInfo');
         if (storeUserInfo) {
             setUserInfo(JSON.parse(storeUserInfo) as UserInfo)
@@ -30,7 +29,6 @@ const home = () => {
             <h1>님 환영합니다.</h1>
         </div>
     );
-
 }
 
 export default home;
