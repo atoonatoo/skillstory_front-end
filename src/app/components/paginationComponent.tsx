@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Post} from "../types/post";
-import {fetchPost} from "../api/fetchPosts";
+import {fetchPost} from "../api/post";
 
-export const PaginationComponent: React.FC = () => {
+export const paginationComponent: React.FC = () => {
     const [posts, setPosts] = useState<Post[]>([]);
     const [page, setPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
@@ -49,4 +49,4 @@ export const PaginationComponent: React.FC = () => {
     );
 }
 
-export default PaginationComponent;
+export default paginationComponent;
